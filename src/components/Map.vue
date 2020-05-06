@@ -63,9 +63,24 @@ export default {
          * ready to be passed to the Gmap component
          */
         createCoOrd(pos) {
+            let actualLat;
+            let actualLng;
+            // If the lat direction is in the north the val is +, otherwise the val is -
+            if (pos.LATDIR === 'N') {
+                actualLat = pos.LAT;
+            } else {
+                actualLat = -pos.LAT;
+            }
+            // If the lat direction is in the north the val is +, otherwise the val is -
+            if (pos.LNGDIR === 'E') {
+                actualLng = pos.LNG;
+            } else {
+                actualLng = -pos.LNG;
+            }
+
             const posObj = {
-                lat: pos.LAT,
-                lng: pos.LNG,
+                lat: actualLat,
+                lng: actualLng,
                 LAT_DIR: pos.LATDIR,
                 LNG_DIR: pos.LNGDIR
             }
