@@ -31,10 +31,10 @@ export default {
       dataFiles: [
         "data/track_2020-04-23T14-25-30.bin",
         "data/track_2020-04-23T14-30-30.bin",
-        "data/track_2020-04-23T14-51-29.bin",
-        "data/track_2020-04-23T14-46-29.bin",
+        "data/track_2020-04-23T14-36-20.bin",
         "data/track_2020-04-23T14-41-30.bin",
-        "data/track_2020-04-23T14-36-20.bin"
+        "data/track_2020-04-23T14-46-29.bin",
+        "data/track_2020-04-23T14-51-29.bin"
       ],
       trackingData: []
     }
